@@ -1,0 +1,116 @@
+@keyframes efecto_logo {
+    0% {
+        width: 250%;
+    }
+
+    10% {
+        width: 265%;
+    }
+
+    25% {
+        width: 280%;
+    }
+
+    35% {
+        width: 295%;
+    }
+
+    50% {
+        width: 305%;
+    }
+
+    60% {
+        width: 295%;
+    }
+
+    75% {
+        width: 280%;
+    }
+
+    100% {
+        width: 250%;
+    }
+}
+
+
+/* fondo del index */
+.inicio {
+    background-image: url("../assets/images/elementos_del_padel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* declaro flex container index */
+
+#ingreso-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+}
+
+.descripcion-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+#logo_gral_inicio {
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 119px;
+    border-color: greenyellow;
+    border-style: inset;
+    height: 250px;
+    width: 250px;
+
+    // animation-name: efecto_logo;
+    // animation-iteration-count: infinite;
+    // animation-timing-function:ease-in;
+    // animation-duration: 2s;
+}
+
+/* propiedad link entrar */
+#entrar {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 55px;
+    color: rgb(222, 2, 200);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25pt;
+    text-decoration: none;
+}
+
+#entrar:hover {
+    color: blue;
+    font-size: 26pt;
+}
+
+#redes-inicio {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    #red-1 {
+        margin-left: 280px;
+    }
+
+    #red-3 {
+        margin-right: 280px;
+    }
+}
+
+#footer-inicio {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.redes {
+    // margin: 5px;
+    height: 25px;
+    width: 25px;
+}

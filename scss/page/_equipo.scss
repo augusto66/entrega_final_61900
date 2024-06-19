@@ -1,0 +1,147 @@
+/* grid para el equipo */
+
+.equipo-container {
+    font-family: $fuente_parrafo;
+    font-size: 24pt;
+    font-style: italic;
+    color: rgb(47, 11, 80);
+    display: grid;
+    grid-template-rows: repeat(15) 40px;
+    grid-template-columns: repeat(3, 3fr);
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.persona-1 {
+    grid-column: 1/2;
+    justify-self: center;
+}
+
+.persona-2 {
+    grid-column: 2/3;
+    justify-self: center;
+}
+
+.persona-3 {
+    grid-column: 3/4;
+    justify-self: center;
+}
+
+.texto-1 {
+    margin: 10px;
+    grid-column: 1/2;
+    //grid-row: 6/16;
+    justify-self: center;
+}
+
+.texto-2 {
+    margin: 10px;
+    grid-column: 2/3;
+    //grid-row: 6/16;
+    justify-self: center;
+}
+
+.texto-3 {
+    margin: 10px;
+    grid-column: 3/4;
+    grid-row: 6/16;
+    justify-self: center;
+}
+
+.foto_main {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.foto-1 {
+    grid-column: 1/2;
+    grid-row: 2/6;
+    justify-self: center;
+}
+
+.foto-2 {
+    grid-column: 2/3;
+    grid-row: 2/6;
+    justify-self: center;
+}
+
+.foto-3 {
+    grid-column: 3/4;
+    grid-row: 2/6;
+    justify-self: center;
+}
+
+/* media query equipo */
+
+@media only screen and (max-width: 700px) {
+    .equipo-container {
+        font-size: 18pt;
+        grid-template-rows: repeat(25) 40px;
+        grid-template-columns: 1fr;
+    }
+
+    .persona-1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .persona-2 {
+        grid-column: 1/2;
+        grid-row: 9/10;
+
+    }
+
+    .persona-3 {
+        grid-column: 1/2;
+        grid-row: 14/15;
+
+    }
+
+    .foto_main {
+        width: 100%;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .foto-1 {
+        grid-column: 1/2;
+        grid-row: 4/6;
+    }
+
+    .foto-2 {
+        grid-column: 1/2;
+        grid-row: 10/12;
+
+    }
+
+    .foto-3 {
+        grid-column: 1/2;
+        grid-row: 15/17;
+
+    }
+
+    .texto-1 {
+        margin: 10px;
+        grid-column: 1/2;
+        grid-row: 7/9;
+
+    }
+
+    .texto-2 {
+        margin: 10px;
+        grid-column: 1/2;
+        grid-row: 12/14;
+
+    }
+
+    .texto-3 {
+        margin: 10px;
+        grid-column: 1/2;
+        grid-row: 17/19;
+
+    }
+
+}
